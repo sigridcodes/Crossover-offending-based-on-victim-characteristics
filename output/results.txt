@@ -1,0 +1,165 @@
+Under six suspect statistics
+-----------------------------
+Number of total (serial) suspects:  3111
+Number of over six suspects:  2539
+Number of under six suspects:  572
+Number of under six suspects with gender crossover:  133
+Number of unknown age suspects:  0
+
+Testing gender crossover for over and under six suspects
+-----------------------------
+Proportion of gender crossover for over-six-suspects:  0.0539582512800315
+BinomtestUnder6vsOver6:  c(`number of successes` = 133), c(`number of trials` = 572), 1.55033757357803e-46, c(0.198481035190005, 0.269343128088348), c(`probability of success` = 0.232517482517483), c(`probability of success` = 0.0539582512800315), two.sided, Exact binomial test, NumberOfUnderSixSuspectWithGenderCrossover and NumberOfUnderSixSuspects
+Cohens H, BinomtestUnder6vsOver6:  0.53746885489998
+Information about crossover combinations
+------------------------------
+Gender:
+Suspects with only male victims:  408
+Suspects with only female victims:  2431
+Relationship:
+Suspects with only family victims:  778
+Suspects with only stranger victims:  500
+Suspects with only acquaintance victims:  1408
+Suspects with family and stranger victims:  18
+Suspects with family and acquaintance victims:  142
+Suspects with stranger and aquaintance victims:  143
+Suspects with triple relationship crossover (family, stranger and acquaintance victims):  23
+Age:
+Suspects with only prepubescent victims:  787
+Suspects with only pubescent victims:  885
+Suspects with only postpubescent victims:  819
+Suspects with pre- and pubescent victims:  340
+Suspects with pre- and postpubescent victims:  54
+Suspects with pubescent and postpubescent victims:  153
+Suspects with triple age crossover (pre-, post- and pubescent):  73
+
+Testing if number of victim differs between crossover and specialized suspects
+-----------------------
+Average number of victims for non-crossover suspects:  5.49912967798085
+Number of non-crossover suspects:  2298
+Average number of victims for suspects with any type of crossover:  15.8081180811808
+Number of suspects with any type of crossover:  813
+T-test comparing number of victims  for suspects with any type of crossover vs those that do not have any crossover: c(t = 7.10647490511987), c(df = 851.021092001348), 2.51871104666957e-12, c(7.46172258061489, 13.156254225785), c(`mean of x` = 15.8081180811808, `mean of y` = 5.49912967798085), c(`difference in means` = 0), 1.45064726757465, two.sided, Welch Two Sample t-test, AnyTypeCrossoverSuspects$NumberOfVictims and NonCrossoverSuspects$NumberOfVictims
+^Effectsize, cohens d, any type 0.452230326558301, 0.95, 0.371429345163251, 0.53295991626159
+T-test comparing number of victims differs for gender crossover suspects vs those that do not have gender crossover: c(t = 2.90656609681117), c(df = 274.8960879482), 0.00395180320971243, c(3.02955252554106, 15.7470050246173), c(`mean of x` = 16.7666666666667, `mean of y` = 7.37838789158747), c(`difference in means` = 0), 3.23002418055423, two.sided, Welch Two Sample t-test, GenderCrossoverSuspects$NumberOfVictims and NonGenderCrossoverSuspects$NumberOfVictims
+^Effectsize, cohens d, gender 0.406578932650206, 0.95, 0.281319070168624, 0.531773808531333
+T-test comparing number of victims differs for age crossover suspects vs those that do not have age crossover: c(t = 6.48307219825904), c(df = 635.63572590392), 1.80493414239244e-10, c(8.44101227424117, 15.7763910227894), c(`mean of x` = 17.8887096774194, `mean of y` = 5.78000802890405), c(`difference in means` = 0), 1.86774129274188, two.sided, Welch Two Sample t-test, AgeCrossoverSuspects$NumberOfVictims and NonAgeCrossoverSuspects$NumberOfVictims
+^Effectsize, cohens d 0.532659441960456, 0.95, 0.443660736485343, 0.62157428408501
+T-test comparing number of victims differs for relationship crossover suspects vs those that do not have relationship crossover: c(t = 6.04878539429989), c(df = 382.106674891235), 3.47950430859207e-09, c(6.26061359424905, 12.2908815980057), c(`mean of x` = 16.4969325153374, `mean of y` = 7.22118491921005), c(`difference in means` = 0), 1.53348928610832, two.sided, Welch Two Sample t-test, RelationshipCrossoverSuspects$NumberOfVictims and NonRelationshipCrossoverSuspects$NumberOfVictims
+^Effectsize, cohens d, relationship 0.402115368995545, 0.95, 0.286918849900861, 0.51724767983071
+Number of victims differs: Holm-Bonferroni adjusted p-values for gender, relationship and age crossover:  0.00395180320971243, 6.95900861718413e-09, 5.41480242717732e-10
+
+Victim age: overlaptable
+----------------------
+"HasPrePubescentVictim","HasPubescentVictim","HasPostPubescentVictim","HasAdultVictim"
+"HasPrePubescentVictim","1254","413","127","0"
+"HasPubescentVictim","","1451","226","0"
+"HasPostPubescentVictim","","","1099","0"
+"HasAdultVictim","","","","0"
+
+Chi test gender crossover
+-------------------------
+Result chi test for gender crossover with different age groups:  c(`X-squared` = 245.181589954691), c(df = 2), 5.74770154926406e-54, Pearson's Chi-squared test, GendercrossovertableWithoutTotal, c(1026, 1000, 815, 228, 38, 4), c(1145.16682738669, 947.913211186114, 747.919961427194, 108.833172613308, 90.0867888138862, 71.0800385728062), c(-3.52144571257484, 1.69177769840849, 2.45282035450188, 11.422856799496, -5.48778426897031, -7.95645253434204), c(-15.4715268286223, 7.03496228720573, 9.70010786992272, 15.4715268286223, -7.03496228720573, -9.70010786992271)
+
+Cohens h for pairwise comparisons between gender crossover and victim age groups
+---------------------------------------------------------------------------------
+Cohens h prepubescent vs pubescent:  0.495978301593992
+Cohens h prepubescent vs postpubescent:  0.741135989703061
+Cohens h pubescent vs postpubescent:  0.245157688109069
+
+Gender crossover for different age groups
+-----------------------------------------
+Has child under six victim and gender crossover:  133
+Proportion has child under six victim and gender crossover:  0.232517482517483
+YoungestVictim prepubescent victim and gender crossover:  228
+Proportion YoungestVictim prepubescent victim and gender crossover:  0.181818181818182
+YoungestVictim pubescent victim and gender crossover:  38
+Proportion YoungestVictim pubescent victim and gender crossover:  0.0366088631984586
+YoungestVictim postpubescent victim and gender crossover:  4
+Proportion YoungestVictim postpubescent victim and gender crossover:  0.00488400488400488
+YoungestVictim adult victim and gender crossover:  0
+Proportion YoungestVictim adult victim and gender crossover:  NaN
+Has child under six victim and no gender crossover:  439
+Proportion YoungestVictim child under six victim and no gender crossover:  0.767482517482518
+YoungestVictim prepubescent victim and no gender crossover:  1026
+Proportion YoungestVictim prepubescent victim and no gender crossover:  0.818181818181818
+YoungestVictim pubescent victim and no gender crossover:  1000
+Proportion YoungestVictim pubescent victim and no gender crossover:  0.963391136801541
+YoungestVictim postpubescent victim and no gender crossover:  815
+Proportion YoungestVictim postpubescent victim and no gender crossover:  0.995115995115995
+YoungestVictim adult victim and no gender crossover:  0
+Proportion YoungestVictim adult victim and no gender crossover:  NaN
+Suspects with unknown gender crossover:  0
+Proportion of suspects with unknown gender crossover:  0
+
+Has injured victim table
+------------------------
+"No violence","Violence","Total"
+"Prepubescent victim",1233,21,1254
+"Pubescent victim",1028,10,1038
+"Postpubescent victim",808,11,819
+"Adult victim",0,0,0
+
+Chi test injured victim
+-----------------------
+Result chi test for injury with different age groups:  c(`X-squared` = 2.15754460420315), c(df = 2), 0.340012702389196, Pearson's Chi-squared test, HasInjuredVictimtableWithoutTotal, c(1233, 1028, 808, 21, 10, 11), c(1237.07039537126, 1023.98649951784, 807.943105110897, 16.9296046287367, 14.0135004821601, 11.0568948891032), c(-0.115728250779455, 0.12542271686083, 0.00200162568697912, 0.989266238652517, -1.07213630651814, -0.0171102621979558), c(-1.28916588076267, 1.32236674472078, 0.0200701641712953, 1.28916588076269, -1.32236674472077, -0.0200701641712871)
+
+Cohen's h for pairwise comparisons between injury and victim age groups
+----------------------------------------------------------------------------
+Cohen's h prepubescent vs pubescent:  0.0629221721535858
+Cohen's h prepubescent vs postpubescent:  0.0272372149478731
+Cohen's h pubescent vs postpubescent:  -0.0356849572057127
+Suspects with violence and gender crossover:  3
+Suspects with violence and relationship crossover:  8
+Suspects with violence and age crossover:  11
+Suspects with violence and no gender crossover:  39
+Suspects with violence and no relationship crossover:  34
+Suspects with violence and no age crossover:  31
+Suspects with violence:  42
+Proportion of suspects with violence and no gender crossover:  0.013727560718057
+Proportion of suspects with violence and no relationship crossover:  0.0122082585278276
+Proportion of suspects with violence and no age crossover:  0.0124448012846246
+Suspects with unknown gender crossover:  0
+Suspects with unknown age crossover:  0
+Suspects with unknown relationship crossover:  0
+BinomtestviolenceGENDER:  c(`number of successes` = 3), c(`number of trials` = 270), 1, c(0.00229726583758984, 0.0321261936893068), c(`probability of success` = 0.0111111111111111), c(`probability of success` = 0.013727560718057), two.sided, Exact binomial test, NumberOfSuspectsWithViolenceAndGenderCrossover and NumberOfGenderCrossoverSuspects
+Cohens h, GENDER:  -0.0236579342432505
+BinomtestviolenceRELATIONSHIP:  c(`number of successes` = 8), c(`number of trials` = 326), 0.0670953539022936, c(0.0106527840716619, 0.0477789340286598), c(`probability of success` = 0.0245398773006135), c(`probability of success` = 0.0122082585278276), two.sided, Exact binomial test, NumberOfSuspectsWithViolenceAndRelationshipCrossover and NumberOfRelationshipCrossoverSuspects
+Cohens h, GENDER:  0.0931658490719794
+BinomtestviolenceAGE:  c(`number of successes` = 11), c(`number of trials` = 620), 0.205897786865079, c(0.00888914395431163, 0.0315230783913095), c(`probability of success` = 0.017741935483871), c(`probability of success` = 0.0124448012846246), two.sided, Exact binomial test, NumberOfSuspectsWithViolenceAndAgeCrossover and NumberOfAgeCrossoverSuspects
+Cohens h, GENDER:  0.0436138901136169
+Violence : Holm-Bonferroni adjusted p-values for gender, relationship and age crossover:  1, 0.201286061706881, 0.411795573730157
+
+Suspect and crossover numbers
+------------------------------
+Total number of serial suspects:  3111
+Mean age at first offence:  33.3908711025394
+Mean age at last offence:  35.8148505303761
+Number of female serial suspects:  0
+Proportion of female serial suspects:  0
+Number of male serial suspects:  3111
+Proportion of male serial suspects:  1
+Number of unknown gender serial suspects:  0
+Proportion of unknown gender serial suspects:  0
+Number of gender crossover suspects:  270
+Proportion of gender crossover suspects:  0.0867888138862102
+Number of age crossover suspects:  620
+Proportion of age crossover suspects:  0.199292831886853
+Number of relationship crossover suspects:  326
+Proportion of relationship crossover suspects:  0.104789456766313
+Number of gender and age crossover suspects:  163
+Proportion of gender and age crossover suspects:  0.0523947283831565
+Number of gender and relationship crossover suspects:  98
+Proportion of gender and relationship crossover suspects:  0.03150112504018
+Number of age and relationship crossover suspects:  223
+Proportion of age and relationship crossover suspects:  0.071681131468981
+Number of gender, age and relationship crossover suspects:  81
+Proportion of gender, age and relationship crossover suspects:  0.0260366441658631
+
+Overlapdatatable
+----------------
+"HasPrePubescentVictim","HasPubescentVictim","HasPostPubescentVictim","HasAdultVictim"
+"HasPrePubescentVictim","1254","413","127","0"
+"HasPubescentVictim","","1451","226","0"
+"HasPostPubescentVictim","","","1099","0"
+"HasAdultVictim","","","","0"
